@@ -1,1 +1,6 @@
 # Sign-Language-Recognition-System
+This project presents a real-time hand gesture recognition system leveraging MediaPipe for landmark detection and machine learning for classification. The system is designed to identify static hand gestures captured through a webcam and predict their corresponding labels using a Random Forest classifier. The core objective is to enhance human-computer interaction and support accessibility for individuals with hearing or speech impairments.
+
+The methodology includes collecting a labeled dataset of hand gesture images, extracting 3D hand landmarks using MediaPipe, normalizing the coordinates, and training a classifier on these features. A Flask-based web interface enables live video streaming and gesture prediction in real time. The system was tested on a separate dataset, achieving over 90% classification accuracy, with confidence levels consistently above 85%.
+
+The use of relative landmark positions makes the model robust to variations in hand size, position, and background. This modular and lightweight system demonstrates a cost-effective solution for gesture recognition without requiring specialized hardware. The project lays the groundwork for future enhancements such as dynamic gesture support, multilingual sign translation, and integration with smart devices.
