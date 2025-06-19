@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Sign Language Recognition</h1>
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+        </div>
+        <div class="instructions">
+            <h2>How to use:</h2>
+            <ol>
+                <li>Allow camera access when prompted</li>
+                <li>Show hand gestures to the camera</li>
+                <li>See predictions appear in real-time</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
